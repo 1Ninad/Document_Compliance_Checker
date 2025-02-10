@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Ensure full-screen layout */
+.app-container {
+  display: flex;
+  justify-content: center; /* Center content */
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f4f4f4; /* Light gray for better contrast */
+}
+
+/* Upload box styling */
+.upload-box {
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 500px;
+  width: 90%;
+}
+
+/* Fix text color */
+.upload-box h1, .upload-box p {
+  color: #333; /* Dark text for visibility */
+  font-size: 20px;
+}
+
+.upload-box button {
+  background: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.upload-box button:hover {
+  background: #0056b3;
+}
